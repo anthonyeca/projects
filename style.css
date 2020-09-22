@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400&display=swap");
+
+/*colors #051e3e • #251e3e • #451e3e • #651e3e • #851e3e*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: url("img/Background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Header Y nav bar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 0rem 10rem;
+}
+
+#logo {
+  font-family: "Lobster", sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+#logo:hover {
+  color: #851e3e;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  padding-left: 8rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: inline-block;
+}
+
+header nav ul li a:hover {
+  color: #851e3e;
+}
+
+header nav ul li a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #851e3e;
+  transition: 300ms;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* CONTENIDO */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9rem;
+}
+
+.container div {
+  position: relative;
+  width: 300px;
+  height: 190px;
+  top: 15rem;
+}
+
+.container img{
+  width: 100%;
+  height: auto;
+}
+
+.container h2{
+  text-align: center;
+  border-bottom: 1px solid #851e3e;
+  font-size: 1.5rem;
+}
+
+.container h2:hover{
+  color: #851e3e;
+  transition: 300ms;
+}
+
+.container p{
+  margin: 15px auto;
+  font-size: 1.2rem;
+}
+
+.container a{
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #851e3e;
+  border: 1px solid black;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container a:hover {
+  background: #651e3e;
+  color: #fff;
+  transition: 300ms;
+}
+
+
+
+@media screen and (max-width: 1350px) {
+  header{
+    padding: 0;
+  }
+
+  #logo {
+    margin: auto;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  
+  header{
+    padding: 0;
+  }
+  
+}
