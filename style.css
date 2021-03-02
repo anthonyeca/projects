@@ -10,7 +10,7 @@
 }
 
 body {
-  background: url("img/Background.jpg");
+  /*background: url("img/Background.jpg");*/
   background-attachment: fixed;
   background-size: cover;
 }
@@ -29,7 +29,8 @@ header {
   font-weight: lighter;
   font-size: 2rem;
   text-decoration: none;
-  color: black;
+  color: #eee;
+  z-index: 1;
 }
 
 #logo:hover {
@@ -43,11 +44,12 @@ header nav ul {
 
 header nav ul li {
   padding-left: 8rem;
+  z-index: 1;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #eee;
   font-size: 20px;
   display: inline-block;
 }
@@ -83,35 +85,38 @@ header nav ul li a:hover::after {
   width: 300px;
   height: 190px;
   top: 15rem;
+  z-index: 1;
 }
 
-.container img{
+.container img {
   width: 100%;
   height: auto;
 }
 
-.container h2{
+.container h2 {
   text-align: center;
   border-bottom: 1px solid #851e3e;
   font-size: 1.5rem;
+  color: #eee;
 }
 
-.container h2:hover{
+.container h2:hover {
   color: #851e3e;
   transition: 300ms;
 }
 
-.container p{
+.container p {
   margin: 15px auto;
   font-size: 1.2rem;
+  color: #eee;
 }
 
-.container a{
+.container a {
   margin: 15px 0 0;
   display: inline-block;
   text-decoration: none;
   color: #851e3e;
-  border: 1px solid black;
+  border: 1px solid white;
   text-decoration: none;
   font-weight: 900;
   padding: 10px;
@@ -124,10 +129,9 @@ header nav ul li a:hover::after {
   transition: 300ms;
 }
 
-
 /*NAV BURGER STYLE*/
 
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: black;
   line-height: 80px;
@@ -136,40 +140,37 @@ header nav ul li a:hover::after {
   display: none;
 }
 
-#check{
+#check {
   display: none;
 }
 
 /*RESPONSIVE*/
 
 @media screen and (max-width: 1350px) {
-
   .caja {
     flex-direction: column;
     width: 300px;
     top: 0;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
-  #logo{
+  #logo {
     margin-left: 1rem;
   }
-  
-  header{
+
+  header {
     padding: 0;
     margin-right: 0.5rem;
   }
 }
 
 @media screen and (max-width: 620px) {
-  .checkbtn{
+  .checkbtn {
     display: flex;
   }
 
-  .checkbtn:hover{
+  .checkbtn:hover {
     color: #651e3e;
   }
 
@@ -183,24 +184,21 @@ header nav ul li a:hover::after {
     top: 80px;
     right: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
     border-radius: 1%;
   }
 
-  header nav ul li{
+  header nav ul li {
     display: block;
     padding: 0;
     margin-top: 10px;
   }
 
-  header nav ul li a{
+  header nav ul li a {
     padding: 10px;
-    
   }
 
-
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     right: 0;
   }
-
 }
