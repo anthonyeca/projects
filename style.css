@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400&display=swap");
 
+:root {
+  --color-hover-fuente: #4e7f7d;
+}
+
 /*colors #051e3e • #251e3e • #451e3e • #651e3e • #851e3e*/
 /*colors 2.0 #23313d  #4e7f7d  #cbffd8 */
 
@@ -35,7 +39,7 @@ header {
 }
 
 #logo:hover {
-  color: #4e7f7d;
+  color: var(--color-hover-fuente);
 }
 
 header nav ul {
@@ -56,7 +60,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: #4e7f7d;
+  color: var(--color-hover-fuente);
 }
 
 header nav ul li a::after {
@@ -64,7 +68,7 @@ header nav ul li a::after {
   width: 0px;
   height: 1px;
   display: block;
-  background: #4e7f7d;
+  background: var(--color-hover-fuente);
   transition: 300ms;
 }
 
@@ -96,13 +100,13 @@ header nav ul li a:hover::after {
 
 .container h2 {
   text-align: center;
-  border-bottom: 1px solid #4e7f7d;
+  border-bottom: 1px solid var(--color-hover-fuente);
   font-size: 1.5rem;
   color: #eee;
 }
 
 .container h2:hover {
-  color: #4e7f7d;
+  color: var(--color-hover-fuente);
   transition: 300ms;
 }
 
@@ -116,7 +120,7 @@ header nav ul li a:hover::after {
   margin: 15px 0 0;
   display: inline-block;
   text-decoration: none;
-  color: #4e7f7d;
+  color: var(--color-hover-fuente);
   border: 1px solid white;
   text-decoration: none;
   font-weight: 900;
@@ -125,7 +129,7 @@ header nav ul li a:hover::after {
 }
 
 .container a:hover {
-  background: #4e7f7d;
+  background: var(--color-hover-fuente);
   color: #fff;
   transition: 300ms;
 }
@@ -178,7 +182,7 @@ header nav ul li a:hover::after {
   }
 
   .checkbtn:hover {
-    color: #4e7f7d;
+    color: var(--color-hover-fuente);
   }
 
   header nav ul {
