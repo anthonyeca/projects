@@ -162,6 +162,10 @@ header nav ul li a:hover::after {
     display: flex;
   }
 
+  .container div {
+    top: 7rem;
+  }
+
   header {
     padding: 0;
     margin-right: 3rem;
