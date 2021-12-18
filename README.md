@@ -1,5 +1,3 @@
-# Web Example "Weather"
+# Project Main
 
-This site was made with html/css/javascript using a API for the weather.
-
-<p> Made just for practice and learn</p>
+<p>This is the page to show my projects</p>
